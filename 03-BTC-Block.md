@@ -107,15 +107,15 @@ if fater, the target will adjust downwards to make it more difficult to get belo
 Conversely, if blocks were mined _slower_ than every 10 minutes, the target will adjust upwards to make it **less difficult** to get below the target for the next period of blocks.
 
 $$
-\text{new\_difficulty} = \text{old\_difficulty} \times \left( \frac{2016 \times 10\ \text{minutes}}{\text{actual\_time\_to\_generate\_last\_2016\_blocks}} \right)
+\text{newDifficulty} = \text{oldDifficulty} \times \left( \frac{2016 \times 10\ \text{minutes}}{\text{actualTimeToGenerateLast2016Blocks}} \right)
 $$
 $$
-\text{Target} = \frac{\text{maximum\_target\_value}}{\text{difficulty}} 
+\text{Target} = \frac{\text{maximumTargetValue}}{\text{difficulty}} 
 $$
 
-`actual_time_to_generate_last_2016_blocks`: 上一个2016个区块的出块总时长
+`actualTimeToGenerateLast2016Blocks`: 上一个2016个区块的出块总时长
 `2016 x 10 mins`: 预期的总时长
-`maximum_target_value`: 是一个固定值`0x00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`
+`maximumTargetValue`: 是一个固定值`0x00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`
 `创世区块`
 - `Height`: 0
 - `Target`: 08fffff00
