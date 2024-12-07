@@ -113,6 +113,7 @@ $$
 \text{Target} = \frac{\text{maximumTargetValue}}{\text{difficulty}} 
 $$
 
+
 `actualTimeToGenerateLast2016Blocks`: 上一个2016个区块的出块总时长
 `2016 x 10 mins`: 预期的总时长
 `maximumTargetValue`: 是一个固定值`0x00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`
